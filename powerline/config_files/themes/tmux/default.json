@@ -8,6 +8,9 @@
                                 }
 			},
 			{
+				"function": "powerline.segments.common.bat.battery"
+			},
+			{
 				"function": "powerline.segments.common.wthr.weather",
 				"args": {
 					"interval": 600,
@@ -33,9 +36,6 @@
                                 "args": {
                                         "exclude_domain": true 
                                 }
-			},
-			{
-				"function": "powerline.segments.common.bat.battery"
 			}
 		]
 	}
