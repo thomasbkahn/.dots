@@ -16,14 +16,6 @@
                                         "priority": 50
                                 },
                                 {
-                                        "function": "powerline.segments.common.time.date",
-                                        "args": {
-                                            "istime": true,
-                                            "format": "%H:%M:%S"
-                                        },
-                                        "priority": 20
-                                },
-                                {
                                         "function": "powerline.segments.shell.cwd",
                                         "args": {
                                                 "dir_shorten_len": 3,
