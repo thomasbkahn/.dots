@@ -38,6 +38,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias ll='ls -lF'
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
 export VISUAL=vim
 export EDITOR="$VISUAL"

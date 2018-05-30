@@ -1,0 +1,5 @@
+dbus-launch &
+dunst &
+tint2 &
+(sleep 0.2s && conky) &
+sh ~/.fehbg &
