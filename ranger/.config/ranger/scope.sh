@@ -105,7 +105,8 @@ case "$mimetype" in
             pygmentize_format=terminal
             highlight_format=ansi
         fi
-        try safepipe highlight --out-format=${highlight_format} "$path" && { dump | trim; exit 5; }
+        # try safepipe highlight --out-format=${highlight_format} "$path" && { dump | trim; exit 5; }
+        # edit below to configure pygmentize (e.g. change the colorscheme)
         try safepipe pygmentize -f ${pygmentize_format} "$path" && { dump | trim; exit 5; }
         exit 2;;
     # Ascii-previews of images:
