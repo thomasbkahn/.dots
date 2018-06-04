@@ -79,8 +79,12 @@
 		"solarized:cyan": [6, "2aa198"],
 		"solarized:green": [2, "859900"],
 
-                "tk:bg":[8, "2e1818"],
-                "tk:fg":[11, "eed2ca"]
+                "tk:bg": 0,
+                "tk:fg": 7,
+                "tk:bold_black": 8,
+                "tk:fg_shade_bright": 15,
+                "tk:fg_shade_dim": 13
+
 
 	},
 	"gradients": {
