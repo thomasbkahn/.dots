@@ -3,3 +3,4 @@ dunst &
 tint2 &
 (sleep 0.2s && conky) &
 sh ~/.fehbg &
+notify-send -t 10000 "$(/usr/lib/update-notifier/apt-check --human-readable)"
