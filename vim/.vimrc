@@ -29,5 +29,9 @@ autocmd InsertEnter * :set relativenumber!
 autocmd InsertLeave * :set relativenumber
 
 call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'airblade/vim-gitgutter'
+Plug 'valloric/youcompleteme'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
+
+let g:ycm_autoclose_preview_window_after_completion=1
