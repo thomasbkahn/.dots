@@ -264,6 +264,9 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
+    <keybind key="W-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
     <keybind key="W-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
@@ -310,34 +313,34 @@
     </keybind>
     -->
     <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-S-Right">
-      <action name="DirectionalCycleWindows">
+    <keybind key="W-l">
+      <action name="DirectionalTargetWindow">
         <direction>right</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Left">
-      <action name="DirectionalCycleWindows">
+    <keybind key="W-h">
+      <action name="DirectionalTargetWindow">
         <direction>left</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Up">
-      <action name="DirectionalCycleWindows">
+    <keybind key="W-k">
+      <action name="DirectionalTargetWindow">
         <direction>up</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Down">
-      <action name="DirectionalCycleWindows">
+    <keybind key="W-j">
+      <action name="DirectionalTargetWindow">
         <direction>down</direction>
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
+    <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Konqueror</name>
+          <name>Terminal</name>
         </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
+        <command>urxvt</command>
       </action>
     </keybind>
     <!-- Launch scrot when Print is pressed -->

@@ -25,6 +25,11 @@
     <item label="GIMP">
       <action name="Execute"><execute>gimp</execute></action>
     </item>
+    <menu id="games-menu" label="Games">
+      <item label="0AD">
+        <action name="Execute"><execute>0ad</execute></action>
+      </item>
+    </menu>
     <menu id="browser-menu" label="Web Browsers">
       <item label="Qutebrowser">
         <action name="Execute"><execute>qutebrowser</execute></action>
@@ -60,9 +65,18 @@
     <item label="Volume Control">
       <action name="Execute"><execute>pavucontrol</execute></action>
     </item>
-    <item label="Bluetooth">
-      <action name="Execute"><execute>blueman-manager</execute></action>
-    </item>
+    <menu id="bluetooth-menu" label="Bluetooth">
+      <item label="Connect OMAKER-M4">
+          <action name="Execute"><execute>/home/tk/utils/bluetooth_connect/connect 00:1D:43:A8:49:AC</execute></action>
+      </item>
+      <!-- need to correct the below, and add other devices
+      <item label="Connect Sony SRS-X3">
+        <action name="Execute"><execute>echo -e "connect 0C:A6:94:75:61:01" | bluetoothctl</execute></action>
+      </item> -->
+      <item label="Device Manager">
+        <action name="Execute"><execute>blueman-manager</execute></action>
+      </item>
+    </menu>
     <menu id="screenshot-menu" label="Take Screenshot">
       <item label="Full Screen">
         <action name="Execute"><execute>scrot '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/screenshots/ ; notify-send "screenshot saved" "~/screenshots/$f"'</execute></action>
