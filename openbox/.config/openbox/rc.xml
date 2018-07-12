@@ -264,7 +264,7 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="W-f">
+    <keybind key="C-A-f">
       <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="W-space">
@@ -334,7 +334,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-t">
+    <keybind key="C-A-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
