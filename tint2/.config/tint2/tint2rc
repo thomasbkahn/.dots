@@ -114,7 +114,7 @@ taskbar_name_background_id = 0
 taskbar_name_active_background_id = 0
 taskbar_name_font_color = #eed2ca 100
 taskbar_name_active_font_color = #eed2ca 100
-taskbar_name_font = Nunito ExtraBold 12
+taskbar_name_font = Helvetica Bold 12
 taskbar_distribute_size = 0
 taskbar_sort_order = none
 task_align = left
@@ -127,7 +127,7 @@ task_centered = 1
 urgent_nb_of_blink = 100000
 task_maximum_size = 300 35
 task_padding = 10 2 25
-task_font = Nunito ExtraBold 12
+task_font = Helvetica Bold 12
 task_tooltip = 1
 task_thumbnail = 1
 task_thumbnail_size = 210
@@ -166,8 +166,8 @@ launcher_item_app = /usr/share/applications/xfce4-screenshooter.desktop
 
 #-------------------------------------
 # Clock
-time1_format = %a %b %d %H:%M
-time1_font = Nunito ExtraBold 12
+time1_format = %a %b %d, %H:%M
+time1_font = Helvetica Bold 12
 time2_format = 
 time1_timezone = 
 time2_timezone = 
@@ -209,5 +209,5 @@ tooltip_hide_timeout = 0.1
 tooltip_padding = 0 0
 tooltip_background_id = 5
 tooltip_font_color = #222222 100
-tooltip_font = Nunito ExtraBold 0
+tooltip_font = Helvetica Bold 0
 

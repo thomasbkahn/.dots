@@ -57,7 +57,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Nunito ExtraBold</name>
+      <name>Helvetica</name>
       <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
@@ -66,7 +66,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Nunito ExtraBold</name>
+      <name>Helvetica</name>
       <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
@@ -75,7 +75,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Nunito ExtraBold</name>
+      <name>Helvetica</name>
       <size>10</size>
       <!-- font size in points -->
       <weight>Bold</weight>
@@ -84,7 +84,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Nunito ExtraBold</name>
+      <name>Helvetica</name>
       <size>10</size>
       <!-- font size in points -->
       <weight>Bold</weight>
@@ -93,7 +93,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Nunito Regular</name>
+      <name>Helvetica</name>
       <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
@@ -102,7 +102,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Nunito Regular</name>
+      <name>Helvetica</name>
       <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
@@ -127,10 +127,10 @@
     <name>desktop 1</name>
     <name>desktop 2</name>
     -->
-      <name>α</name>
-      <name>β</name>
-      <name>γ</name>
-      <name>δ</name>
+      <name>Alpha</name>
+      <name>Beta</name>
+      <name>Gamma</name>
+      <name>Delta</name>
       <!-- <name>ε</name> -->
     </names>
     <popupTime>875</popupTime>

@@ -54,11 +54,10 @@
     </item>
   </menu>
   <menu id="desktops-menu" label="Desktops">
-    <item label="α"><action name="GoToDesktop"><to>1</to></action></item>
-    <item label="β"><action name="GoToDesktop"><to>2</to></action></item>
-    <item label="γ"><action name="GoToDesktop"><to>3</to></action></item>
-    <item label="δ"><action name="GoToDesktop"><to>4</to></action></item>
-    <item label="ε"><action name="GoToDesktop"><to>5</to></action></item>
+    <item label="Alpha"><action name="GoToDesktop"><to>1</to></action></item>
+    <item label="Beta"><action name="GoToDesktop"><to>2</to></action></item>
+    <item label="Gamma"><action name="GoToDesktop"><to>3</to></action></item>
+    <item label="Delta"><action name="GoToDesktop"><to>4</to></action></item>
   </menu>
   <!-- <menu id="applications-menu" label="Applications" execute="openbox-menu -i lxde-applications.menu"/> -->
   <menu id="utilities-menu" label="Utilities">
