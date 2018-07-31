@@ -2,5 +2,6 @@ dbus-launch &
 dunst &
 tint2 &
 (sleep 0.2s && conky) &
+(sleep 0.3s && compton) &
 sh ~/.fehbg &
 notify-send -t 10000 "$(/usr/lib/update-notifier/apt-check --human-readable)"
