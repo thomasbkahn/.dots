@@ -186,12 +186,12 @@ clock_dwheel_command =
 # Battery
 battery_tooltip = 1
 battery_low_status = 10
-battery_low_cmd = 
+battery_low_cmd = notify-send -u "critical" "battery low" 
 battery_full_cmd = 
 battery_font_color = #eed2ca 100
-bat1_format = 
-bat2_format = 
-battery_padding = 1 0
+bat1_format = "wow"
+#bat2_format = %p
+battery_padding = 10 0
 battery_background_id = 0
 battery_hide = 101
 battery_lclick_command = 

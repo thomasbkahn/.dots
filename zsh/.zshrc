@@ -51,4 +51,4 @@ export LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;33:do=01;33:bd=40;
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-. /usr/local/lib/python3.6/dist-packages/powerline/bindings/zsh/powerline.zsh
+. /usr/local/lib/python3.5/dist-packages/powerline/bindings/zsh/powerline.zsh

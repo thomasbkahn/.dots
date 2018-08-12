@@ -25,6 +25,9 @@
     <item label="GIMP">
       <action name="Execute"><execute>gimp</execute></action>
     </item>
+    <item label="Torguard VPN">
+      <action name="Execute"><execute>gksudo torguard</execute></action>
+    </item>
     <menu id="games-menu" label="Games">
       <item label="0AD">
         <action name="Execute"><execute>0ad</execute></action>
@@ -58,6 +61,9 @@
     <item label="Beta"><action name="GoToDesktop"><to>2</to></action></item>
     <item label="Gamma"><action name="GoToDesktop"><to>3</to></action></item>
     <item label="Delta"><action name="GoToDesktop"><to>4</to></action></item>
+    <separator />
+    <item label="Add New Desktop"><action name="AddDesktop"><where>last</where></action></item>
+    <item label="Remove Last Desktop"><action name="RemoveDesktop"><where>last</where></action></item>
   </menu>
   <!-- <menu id="applications-menu" label="Applications" execute="openbox-menu -i lxde-applications.menu"/> -->
   <menu id="utilities-menu" label="Utilities">
@@ -87,25 +93,26 @@
         <action name="Execute"><execute>scrot '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/screenshots/ ; notify-send "screenshot saved" "~/screenshots/$f"' -u</execute></action>
       </item>
     </menu>
-    <item label="ObConf">
-      <action name="Execute"><execute>obconf</execute></action>
-    </item>
-    <item label="Reconfigure">
-      <action name="Reconfigure" />
-    </item>
-    <item label="Restart">
-      <action name="Restart Openbox" />
-    </item>
+    <menu id="openbox-utils-menu" label="Openbox Utilities">
+      <item label="ObConf">
+        <action name="Execute"><execute>obconf</execute></action>
+      </item>
+      <item label="Reconfigure">
+        <action name="Reconfigure" />
+      </item>
+      <item label="Restart Openbox">
+        <action name="Restart Openbox" />
+      </item>
+    </menu>
   </menu>
-
   <separator />
-  <item label="Shutdown">
+  <menu id="battery-menu" label="Battery" execute="/usr/local/bin/battery_pipe_menu" />
+  <item label="Lock Screen">
     <action name="Execute">
-      <prompt>Are you sure you want to shutdown?</prompt>
-      <execute>shutdown now</execute>
+      <execute>xflock4</execute>
     </action>
   </item>
-  <item label="Exit">
+  <item label="Log Out">
     <action name="Exit" />
   </item>
 </menu>
