@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>thicc-tk</name>
-    <titleLayout>LDMC</titleLayout>
+    <titleLayout>DLC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -280,14 +280,8 @@
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
-      <action name="NextWindow">
-        <dialog>list</dialog>
-        <allDesktops>yes</allDesktops>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
+      <action name="Execute">
+        <command>rofi -show window -fullscreen -padding 450</command>
       </action>
     </keybind>
     <!--  

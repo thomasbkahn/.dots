@@ -4,4 +4,5 @@ tint2 &
 (sleep 0.2s && conky) &
 (sleep 0.3s && compton) &
 sh ~/.fehbg &
+redshift -t 6400:4000 -l 40.65:-73.95 &
 notify-send -t 10000 "$(/usr/lib/update-notifier/apt-check --human-readable)"
