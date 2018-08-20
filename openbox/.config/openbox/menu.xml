@@ -99,6 +99,11 @@
   </menu>
 
   <separator />
+  <item label="Suspend">
+    <action name="Execute">
+      <execute>systemctl suspend</execute>
+    </action>
+  </item>
   <item label="Shutdown">
     <action name="Execute">
       <prompt>Are you sure you want to shutdown?</prompt>

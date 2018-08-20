@@ -6,3 +6,5 @@ tint2 &
 sh ~/.fehbg &
 redshift -t 6400:4000 -l 40.65:-73.95 &
 notify-send -t 10000 "$(/usr/lib/update-notifier/apt-check --human-readable)"
+
+# conditional compton based on $DISPLAY, to suppress for vnc
