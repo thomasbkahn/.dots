@@ -110,7 +110,7 @@
       <execute>shutdown now</execute>
     </action>
   </item>
-  <item label="Exit">
+  <item label="Log Out">
     <action name="Exit" />
   </item>
 </menu>
