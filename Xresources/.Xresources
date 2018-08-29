@@ -49,4 +49,6 @@ rofi.color-active: bg, ylw, bg, ylw, bg
 
 !               background, border, separator
 rofi.color-window: bg, bg, fg
+rofi.hide-scrollbar: true
+rofi.fullscreen: true
 rofi.font: tewi 8 
