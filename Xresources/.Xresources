@@ -15,12 +15,12 @@ URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/urxvt.svg
 
 ! DPI/Font
 Xft.dpi: 96
-Xft.autohint: 1
-Xft.antialias: 1
-Xft.hinting: true
-Xft.hintstyle: hintfull
-Xft.rgba: rgb
-Xft.lcdfilter: lcddefault
+! Xft.autohint: 1
+! Xft.antialias: true
+! Xft.hinting: false
+! Xft.hintstyle: hintslight
+! Xft.rgba: rgb
+! Xft.lcdfilter: lcddefault
 
 ! Colors
 *background:   bg
@@ -41,3 +41,12 @@ Xft.lcdfilter: lcddefault
 *color14:     bcyn
 *color7:      wht
 *color15:     bwht
+
+! rofi
+rofi.color-normal: bg, fg, bg, fg, bg
+rofi.color-urgent: bg, red, bg, red, bg
+rofi.color-active: bg, ylw, bg, ylw, bg
+
+!               background, border, separator
+rofi.color-window: bg, bg, fg
+rofi.font: tewi 8 
