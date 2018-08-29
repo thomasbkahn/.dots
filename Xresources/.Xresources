@@ -13,16 +13,12 @@ URxvt.cursorBlink: true
 URxvt.cursorColor: red
 URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/urxvt.svg
 
-! copy and paste with Control-Alt-{V, C} instead
-! URxvt.keysym.Shift-Control-V: eval:paste_clipboard
-! URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-
 ! DPI/Font
 Xft.dpi: 96
-! Xft.autohint: 1
-! Xft.antialias: 1
-! Xft.hinting: true
-! Xft.hintstyle: hintfull
+Xft.autohint: 1
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintfull
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
