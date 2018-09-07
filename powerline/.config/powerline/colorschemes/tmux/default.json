@@ -5,10 +5,10 @@
 		"activity_status":      {"fg": "tk:bg",     "bg": "yellow",    "attrs": []},
 		"bell_status":          {"fg": "red",        "bg": "gray0",    "attrs": []},
 		"window":               {"fg": "gray6",      "bg": "gray0",    "attrs": []},
-		"window:divider":       {"fg": "gray4",      "bg": "gray0",    "attrs": []},
+		"window:divider":       {"fg": "gray4",      "bg": "green",    "attrs": []},
 		"window:current":       {"fg": "tk:fg", "bg": "red", "attrs": []},
 		"window_name":          {"fg": "tk:fg",      "bg": "red", "attrs": ["bold"]},
 		"session":              {"fg": "tk:bg",      "bg": "tk:fg",   "attrs": ["bold"]},
-		"session:prefix":       {"fg": "tk:fg",     "bg": "red", "attrs": ["bold"]}
+		"session:prefix":       {"fg": "tk:fg",     "bg": "red", "attrs": []}
 	}
 }

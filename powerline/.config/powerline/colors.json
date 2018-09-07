@@ -83,7 +83,9 @@
                 "tk:fg": 7,
                 "tk:bold_black": 8,
                 "tk:fg_shade_bright": 15,
-                "tk:fg_shade_dim": 13
+                "tk:fg_shade_dim": 13,
+                "tk.red": 1,
+                "tk.green": 2
 
 
 	},
