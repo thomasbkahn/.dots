@@ -16,14 +16,17 @@
   <!-- <menu id="/Debian" /> -->
   <separator />
   <menu id="applications-menu" label="Applications">
+    <item label="Thunderbird">
+      <action name="Execute"><execute>thunderbird</execute></action>
+    </item>
     <item label="Inkscape">
       <action name="Execute"><execute>inkscape</execute></action>
     </item>
-    <item label="Darktable">
-      <action name="Execute"><execute>darktable</execute></action>
-    </item>
     <item label="GIMP">
       <action name="Execute"><execute>gimp</execute></action>
+    </item>
+    <item label="Darktable">
+      <action name="Execute"><execute>darktable</execute></action>
     </item>
     <menu id="games-menu" label="Games">
       <item label="0AD">
@@ -31,14 +34,14 @@
       </item>
     </menu>
     <menu id="browser-menu" label="Web Browsers">
+      <item label="Firefox">
+        <action name="Execute"><execute>firefox</execute></action>
+      </item>
       <item label="Qutebrowser">
         <action name="Execute"><execute>qutebrowser</execute></action>
       </item>
       <item label="Vivaldi">
         <action name="Execute"><execute>vivaldi</execute></action>
-      </item>
-      <item label="Firefox">
-        <action name="Execute"><execute>firefox</execute></action>
       </item>
     </menu>
     <menu id="office-menu" label="Office">
