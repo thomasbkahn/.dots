@@ -22,3 +22,5 @@ bspc config gapless_monocle      true
 
 ~/.config/bspwm/panel &
 compton &
+
+redshift -t 6400:4000 -l 40.65:-73.95 &

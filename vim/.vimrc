@@ -7,10 +7,10 @@ set hls
 colo slate
 filetype indent plugin on
 set updatetime=100
-set tabstop=8
+set tabstop=2
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set softtabstop=2
+set shiftwidth=2
 
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
