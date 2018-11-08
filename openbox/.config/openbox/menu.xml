@@ -6,10 +6,10 @@
                 file:///usr/share/openbox/menu.xsd">
 
 <menu id="root-menu" label="Openbox 3">
-  <item label="Terminal">
+  <item label="_Terminal">
     <action name="Execute"><execute>urxvt</execute></action>
   </item>
-  <item label="Browser">
+  <item label="_Browser">
     <action name="Execute"><execute>qutebrowser</execute></action>
   </item>
   <!-- This requires the presence of the 'openbox-menu' package to work -->
@@ -107,7 +107,7 @@
       <execute>systemctl suspend</execute>
     </action>
   </item>
-  <item label="Shutdown">
+  <item label="Shutdow_n">
     <action name="Execute">
       <prompt>Are you sure you want to shutdown?</prompt>
       <execute>shutdown now</execute>
