@@ -3,6 +3,7 @@ set relativenumber
 set showcmd
 set number
 set hidden
+set nocompatible
 set hls
 colo slate
 filetype indent plugin on
@@ -35,3 +36,5 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 call plug#end()
 
 let g:ycm_autoclose_preview_window_after_completion=1
+
+autocmd FileType python setlocal shiftwidth=2 expandtab softtabstop=2

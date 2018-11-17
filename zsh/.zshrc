@@ -37,8 +37,15 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# misc aliases
 alias ll='ls -lF'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias pacman='pacman --color auto'
+alias 'git log'='git log --stat'
+
+# this allows other aliases (for example, ll) to be executed after sudo
+# see https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
+alias sudo='sudo '
 
 export VISUAL=vim
 export EDITOR="$VISUAL"

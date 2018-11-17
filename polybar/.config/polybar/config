@@ -78,9 +78,82 @@ wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+[bar/openbox_bar]
+width = 100%
+height = 24
+offset-x = 0%
+offset-y = 0%
+radius = 0.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = #f00
+
+border-size = 0
+border-color = #ee00ca
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = tewi:size=8
+font-1 = tewi:size=8
+font-2 = siji:pixelsize=10;1
+
+modules-left = openbox xwindow
+modules-center = date
+modules-right = memory cpu
+
+tray-position = right
+tray-padding = 0
+;tray-transparent = true
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
+
+[module/openbox]
+type=internal/xworkspaces
+pin-workspaces=true
+enable-click=true
+enable-scroll=true
+format=<label-state>
+label-monitor=%name%
+label-active =%icon%%name%
+label-active-background =${colors.background-alt} 
+label-active-underline=#fba922
+label-active-padding=2
+label-occupied =%name%
+label-occupied-foreground=${colors.foreground-alt}
+label-occupied-padding=2
+label-urgent=%index%
+label-urgent-foreground=#000000
+label-urgent-background=#bd2c40
+label-urgent-underline=#9b0a20
+label-empty =%name%
+label-empty-padding=2
+label-empty-background=${colors.background}
+label-empty-foreground=${colors.background-alt}
 
 [module/xkeyboard]
 type = internal/xkeyboard
