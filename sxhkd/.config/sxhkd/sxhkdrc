@@ -4,6 +4,21 @@
 {XF86PowerOff}
         notify-send "power button pressed"
 
+{XF86MonBrightnessUp}
+	xbacklight +10; # add notify-send
+
+{XF86MonBrightnessDown}
+	xbacklight -10; # add notify-send
+
+{XF86AudioRaiseVolume}
+	pamixer --increase 10; # add notify-send
+
+{XF86AudioLowerVolume}
+	pamixer --decrease 10; # add notify-send
+
+
+# toggle mute, need to query get mute and then toggle
+
 super + n
         notify-send "wow"
 

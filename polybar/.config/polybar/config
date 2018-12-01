@@ -57,7 +57,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm
 modules-center = date
-modules-right = memory cpu battery
+modules-right = pulseaudio memory cpu battery
 
 tray-position = right
 tray-padding = 0
