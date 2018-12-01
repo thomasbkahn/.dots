@@ -17,6 +17,8 @@ bspc config gapless_monocle      true
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
 
+bspc config focus_follows_pointer true
+
 # set background
 /home/tk/.fehbg &
 

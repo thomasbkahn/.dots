@@ -3,8 +3,8 @@
 ! URxvt
 ! URxvt.font: xft:scientifica:size=11
 ! URxvt.boldFont: xft:scientifica:size=11
-URxvt.font: xft:tewi:size=8
-URxvt.boldFont: xft:tewi:size=8
+URxvt.font: xft:tewi:pixelsize=11:antialias=false
+URxvt.boldFont: xft:tewi:pixelsize=11:antialias=false
 URxvt.internalBorder: 20
 URxvt.geometry: 100x30
 URxvt.scrollBar: false
@@ -12,15 +12,16 @@ URxvt*buffered: false
 URxvt.cursorBlink: true
 URxvt.cursorColor: red
 URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/urxvt.svg
+Urxvt.letterSpace: 1
 
 ! DPI/Font
-Xft.dpi: 96
-Xft.autohint: 1
-Xft.antialias: 1
-Xft.hinting: true
-Xft.hintstyle: hintfull
-Xft.rgba: rgb
-Xft.lcdfilter: lcddefault
+/* Xft.dpi: 96 */
+/* Xft.autohint: 1 */
+/* Xft.antialias: 1 */
+/* Xft.hinting: true */
+/* Xft.hintstyle: hintfull */
+/* Xft.rgba: rgb */
+/* Xft.lcdfilter: lcddefault */
 
 ! Colors
 *background:   bg
