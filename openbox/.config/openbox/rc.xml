@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>thicc-tk</name>
-    <titleLayout>DLC</titleLayout>
+    <name>bad-religion-tk</name>
+    <titleLayout>LMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,55 +57,56 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Helvetica</name>
-      <size>12</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Helvetica</name>
-      <size>12</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Helvetica</name>
-      <size>10</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Helvetica</name>
-      <size>10</size>
+      <!-- <name>Tewiotb</name> -->
+      <name>TamzenForPowerlineOTB</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Helvetica</name>
-      <size>12</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Helvetica</name>
-      <size>12</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -284,12 +285,27 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
+    <!-- <keybind key="A-Tab"> -->
+      <!-- <action name="Execute"> -->
+      <!--   <command>rofi -show window -fullscreen -padding 450</command> -->
+      <!-- </action> -->
+        <!-- <dialog>list</dialog> -->
+        <!-- <allDesktops>yes</allDesktops> -->
+        <!-- <raise>yes</raise> -->
+        <!-- <bar>yes</bar> -->
     <keybind key="A-Tab">
-      <action name="Execute">
-        <command>rofi -show window -fullscreen -padding 450</command>
+      <action name="NextWindow">
+        <dialog>list</dialog>
+        <allDesktops>yes</allDesktops>
+        <raise>yes</raise>
+        <bar>yes</bar>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
       </action>
     </keybind>
-    <!--  
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
         <finalactions>
@@ -299,6 +315,7 @@
         </finalactions>
       </action>
     </keybind>
+    <!--  
     <keybind key="C-A-Tab">
       <action name="NextWindow">
         <panels>yes</panels>
