@@ -3,15 +3,17 @@
 ! URxvt
 ! URxvt.font: xft:scientifica:size=11
 ! URxvt.boldFont: xft:scientifica:size=11
-URxvt.font: xft:tewi:pixelsize=11:antialias=false
-URxvt.boldFont: xft:tewi:pixelsize=11:antialias=false
+/* URxvt.font: xft:tewiotb:pixelsize=11:antialias=false */
+/* URxvt.boldFont: xft:tewiotb:pixelsize=11:antialias=false */
+URxvt.font: xft:tamzenforpowerline:pixelsize=15:antialias=false
+URxvt.boldFont: xft:tamzenforpowerline:pixelsize=15:antialias=false
 URxvt.internalBorder: 20
 URxvt.geometry: 100x30
 URxvt.scrollBar: false
 URxvt*buffered: false
 URxvt.cursorBlink: true
 URxvt.cursorColor: red
-URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/urxvt.svg
+URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/terminal.svg
 Urxvt.letterSpace: 1
 
 ! DPI/Font
