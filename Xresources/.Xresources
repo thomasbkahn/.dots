@@ -3,15 +3,15 @@
 ! URxvt
 ! URxvt.font: xft:scientifica:size=11
 ! URxvt.boldFont: xft:scientifica:size=11
-URxvt.font: xft:tewi:pixelsize=11:antialias=false
-URxvt.boldFont: xft:tewi:pixelsize=11:antialias=false
+URxvt.font: xft:tewiotb:pixelsize=11:antialias=false
+URxvt.boldFont: xft:tewiotb:pixelsize=11:antialias=false
 URxvt.internalBorder: 20
 URxvt.geometry: 100x30
 URxvt.scrollBar: false
 URxvt*buffered: false
 URxvt.cursorBlink: true
 URxvt.cursorColor: red
-URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/urxvt.svg
+! URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/terminal.svg
 Urxvt.letterSpace: 1
 
 ! DPI/Font
@@ -24,21 +24,21 @@ Urxvt.letterSpace: 1
 /* Xft.lcdfilter: lcddefault */
 
 ! Colors
-*background:   bg
-*foreground:   fg
-*color0:      blk
-*color8:      bblk
-*color1:      red
-*color9:      bred
-*color2:      grn
-*color10:     bgrn
-*color3:      ylw
-*color11:     bylw
-*color4:      blu
-*color12:     bblu
-*color5:      mag
-*color13:     bmag
-*color6:      cyn
-*color14:     bcyn
-*color7:      wht
-*color15:     bwht
+*background:  #2e1818
+*foreground:  #eed2ca
+*color0:      #2e1818
+*color8:      #5e4644
+*color1:      #c84242
+*color9:      #c84242
+*color2:      #4b7e49
+*color10:     #4b7e49
+*color3:      #dfb459
+*color11:     #dfb459
+*color4:      #2b5295
+*color12:     #2b5295
+*color5:      #cb5221
+*color13:     #cb5221
+*color6:      #1b7c93
+*color14:     #1b7c93
+*color7:      #eed2ca
+*color15:     #8e7571
