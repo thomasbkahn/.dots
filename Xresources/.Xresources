@@ -5,8 +5,10 @@
 ! URxvt.boldFont: xft:scientifica:size=11
 /* URxvt.font: xft:tewiotb:pixelsize=11:antialias=false */
 /* URxvt.boldFont: xft:tewiotb:pixelsize=11:antialias=false */
-URxvt.font: xft:tamzenforpowerline:pixelsize=15:antialias=false
-URxvt.boldFont: xft:tamzenforpowerline:pixelsize=15:antialias=false
+/* URxvt.font: xft:tamzenforpowerline:pixelsize=15:antialias=false */
+/* URxvt.boldFont: xft:tamzenforpowerline:pixelsize=15:antialias=false */
+URxvt.font: xft:cozette:pixelsize=11:antialias=false
+URxvt.boldFont: xft:cozette:pixelsize=11:antialias=false
 URxvt.internalBorder: 20
 URxvt.geometry: 100x30
 URxvt.scrollBar: false
