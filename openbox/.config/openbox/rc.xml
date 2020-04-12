@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>bad-religion-tk</name>
-    <titleLayout>LMC</titleLayout>
+    <name>joshua-tree</name>
+    <titleLayout>LDMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,7 +57,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>TamzenForPowerlineOTB</name>
+      <name>Cozette</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
@@ -66,7 +66,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>TamzenForPowerlineOTB</name>
+      <name>Cozette</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
@@ -75,7 +75,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>TamzenForPowerlineOTB</name>
+      <name>Cozette</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
@@ -86,7 +86,7 @@
     <font place="MenuItem">
       <!-- <name>Tewiotb</name> -->
       <name>TamzenForPowerlineOTB</name>
-      <size>9</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -94,7 +94,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>TamzenForPowerlineOTB</name>
+      <name>Cozette</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
@@ -103,7 +103,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>TamzenForPowerlineOTB</name>
+      <name>Cozette</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
@@ -253,11 +253,11 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="C-A-k">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4">
+    <keybind key="C-A-slash">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -268,16 +268,122 @@
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>
     </keybind>
-    <keybind key="W-backslash">
+    <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-BackSpace">
+    <keybind key="W-backslash">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
     </keybind>
+    <keybind key="W-space">
+      <action name="Execute">
+        <command>rofi -show run</command>
+      </action>
+    </keybind>
+    <keybind key="W-BackSpace">
+      <action name="ShowMenu">
+        <menu>client-list-combined-menu</menu>
+        <!-- <menu>client-list-menu</menu> -->
+      </action>
+    </keybind>
+    <keybind key="C-A-l">
+      <action name="Execute">
+        <command>xfce4-screensaver-command --lock</command>
+      </action>
+    </keybind>
+    <!-- tiling commands -->
+    <keybind key="W-a">
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>center</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="C-W-w">
+      <action name="GrowToEdge">
+        <direction>north</direction>
+      </action>
+    </keybind>
+    <keybind key="C-W-a">
+      <action name="GrowToEdge">
+        <direction>west</direction>
+      </action>
+    </keybind>
+    <keybind key="C-W-x">
+      <action name="GrowToEdge">
+        <direction>south</direction>
+      </action>
+    </keybind>
+    <keybind key="C-W-d">
+      <action name="GrowToEdge">
+        <direction>east</direction>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>center</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-w">
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-x">
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>-0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-s">
+      <action name="ToggleMaximize">
+      </action>
+    </keybind>
+    <keybind key="W-q">
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-z">
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-e">
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>-0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
@@ -465,7 +571,7 @@
       <mousebind button="Left" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
-        <action name="Unshade"/>
+        <!-- <action name="Unshade"/> -->
       </mousebind>
       <mousebind button="Middle" action="Press">
         <action name="Lower"/>

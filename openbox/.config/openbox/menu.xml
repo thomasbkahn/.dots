@@ -63,7 +63,7 @@
     <item label="Delta"><action name="GoToDesktop"><to>4</to></action></item>
   </menu>
   <!-- <menu id="applications-menu" label="Applications" execute="openbox-menu -i lxde-applications.menu"/> -->
-  <menu id="utilities-menu" label="Utilities">
+  <menu id="utilities-menu" label="_Utilities">
     <item label="Volume Control">
       <action name="Execute"><execute>pavucontrol</execute></action>
     </item>
@@ -93,12 +93,12 @@
     <item label="ObConf">
       <action name="Execute"><execute>obconf</execute></action>
     </item>
-    <item label="Reconfigure">
+    <item label="_Reconfigure">
       <action name="Reconfigure" />
     </item>
-    <item label="Restart">
-      <action name="Restart Openbox" />
-    </item>
+    <!-- <item label="Restart"> -->
+    <!--   <action name="Restart Openbox" /> -->
+    <!-- </item> -->
   </menu>
 
   <separator />

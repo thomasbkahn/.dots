@@ -1,9 +1,13 @@
 dbus-launch &
 dunst &
 tint2 &
-(sleep 0.2s && compton) &
+# (sleep 0.2s && compton) &
 sh ~/.fehbg &
 redshift -t 6400:4000 -l 40.65:-73.95 &
 notify-send -t 10000 "$(/usr/lib/update-notifier/apt-check --human-readable)"
+conky &
+picom &
+xfce4-screensaver &
+unclutter --timeout 1 &
 
 # conditional compton based on $DISPLAY, to suppress for vnc
