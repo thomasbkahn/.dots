@@ -34,7 +34,7 @@ height = 24
 offset-x = 0%
 offset-y = 0%
 radius = 0.0
-fixed-center = false
+fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -57,7 +57,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm
 modules-center = date
-modules-right = pulseaudio memory cpu battery
+modules-right = memory cpu battery
 
 tray-position = right
 tray-padding = 0

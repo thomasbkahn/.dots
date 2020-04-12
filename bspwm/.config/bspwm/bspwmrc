@@ -26,3 +26,6 @@ bspc config focus_follows_pointer true
 compton &
 
 redshift -t 6400:4000 &
+
+# start screensaver daemon
+xfce4-screensaver &

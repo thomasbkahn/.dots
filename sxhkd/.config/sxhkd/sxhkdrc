@@ -28,11 +28,20 @@ super + Return
 
 # program launcher
 super + space
-	rofi -fg "#f0f0f0" -hlfg "#f0f0f0" -bg "#0f0f0f" -hlbg "#cc342b" -bc "#cc342b" -font "tewi 9" -opacity "80" -show run
+	rofi -fg "#f0f0f0" -hlfg "#f0f0f0" -bg "#0f0f0f" -hlbg "#cc342b" -bc "#cc342b" -font "cozette 8" -opacity "80" -auto-select -show run
+
+# window switcher
+alt + Tab
+	rofi -fg "#f0f0f0" -hlfg "#f0f0f0" -bg "#0f0f0f" -hlbg "#cc342b" -bc "#cc342b" -font "cozette 8" -opacity "80" -auto-select -show window
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# lock screen
+ctrl + alt + l
+  xfce4-screensaver-command --lock
+
 
 #
 # bspwm hotkeys
