@@ -55,10 +55,10 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Cozette</name>
-      <size>9</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>11</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -66,8 +66,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Cozette</name>
-      <size>9</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>11</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -75,8 +75,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Cozette</name>
-      <size>9</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>11</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -94,8 +94,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Cozette</name>
-      <size>9</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>11</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -103,8 +103,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Cozette</name>
-      <size>9</size>
+      <name>TamzenForPowerlineOTB</name>
+      <size>11</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -273,7 +273,7 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-backslash">
+    <keybind key="W-Return">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
@@ -292,6 +292,12 @@
     <keybind key="C-A-l">
       <action name="Execute">
         <command>xfce4-screensaver-command --lock</command>
+      </action>
+    </keybind>
+    <!-- Send notification of batter / time status -->
+    <keybind key="C-A-p">
+      <action name="Execute">
+        <command>battery_notification</command>
       </action>
     </keybind>
     <!-- tiling commands -->
@@ -456,7 +462,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-Return">
+    <keybind key="C-A-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -928,5 +934,8 @@
 
   # end of the example
 -->
+  <application name="*">
+    <decor>no</decor>
+  </application>
   </applications>
 </openbox_config>

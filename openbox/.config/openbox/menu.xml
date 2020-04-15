@@ -6,116 +6,85 @@
                 file:///usr/share/openbox/menu.xsd">
 
 <menu id="root-menu" label="Openbox 3">
-  <item label="Terminal">
+  <item label="_terminal">
     <action name="Execute"><execute>urxvt</execute></action>
   </item>
-  <item label="Browser">
+  <item label="bro_wser">
     <action name="Execute"><execute>qutebrowser</execute></action>
   </item>
   <!-- This requires the presence of the 'openbox-menu' package to work -->
   <!-- <menu id="/Debian" /> -->
   <separator />
-  <menu id="applications-menu" label="Applications">
-    <item label="Thunderbird">
-      <action name="Execute"><execute>thunderbird</execute></action>
+  <menu id="applications-menu" label="_applications">
+    <item label="_firefox">
+      <action name="Execute"><execute>firefox</execute></action>
     </item>
-    <item label="Inkscape">
-      <action name="Execute"><execute>inkscape</execute></action>
-    </item>
-    <item label="GIMP">
-      <action name="Execute"><execute>gimp</execute></action>
-    </item>
-    <item label="Darktable">
-      <action name="Execute"><execute>darktable</execute></action>
-    </item>
-    <menu id="games-menu" label="Games">
-      <item label="0AD">
-        <action name="Execute"><execute>0ad</execute></action>
-      </item>
-    </menu>
-    <menu id="browser-menu" label="Web Browsers">
-      <item label="Firefox">
-        <action name="Execute"><execute>firefox</execute></action>
-      </item>
-      <item label="Qutebrowser">
-        <action name="Execute"><execute>qutebrowser</execute></action>
-      </item>
-      <item label="Vivaldi">
-        <action name="Execute"><execute>vivaldi</execute></action>
-      </item>
-    </menu>
-    <menu id="office-menu" label="Office">
-      <item label="Spreadsheet">
-        <action name="Execute"><execute>localc</execute></action>
-      </item>
-      <item label="Word Processor">
-        <action name="Execute"><execute>lowriter</execute></action>
-      </item>
-    </menu>
-    <item label="File Manager">
+    <item label="_thunar">
       <action name="Execute"><execute>thunar</execute></action>
     </item>
-  </menu>
-  <menu id="desktops-menu" label="Desktops">
-    <item label="Alpha"><action name="GoToDesktop"><to>1</to></action></item>
-    <item label="Beta"><action name="GoToDesktop"><to>2</to></action></item>
-    <item label="Gamma"><action name="GoToDesktop"><to>3</to></action></item>
-    <item label="Delta"><action name="GoToDesktop"><to>4</to></action></item>
+    <item label="_gimp">
+      <action name="Execute"><execute>gimp</execute></action>
+    </item>
+    <item label="_inkscape">
+      <action name="Execute"><execute>inkscape</execute></action>
+    </item>
   </menu>
   <!-- <menu id="applications-menu" label="Applications" execute="openbox-menu -i lxde-applications.menu"/> -->
-  <menu id="utilities-menu" label="_Utilities">
-    <item label="Volume Control">
+  <menu id="utilities-menu" label="_utilities">
+    <item label="_volume">
       <action name="Execute"><execute>pavucontrol</execute></action>
     </item>
-    <menu id="bluetooth-menu" label="Bluetooth">
-      <item label="Connect OMAKER-M4">
-          <action name="Execute"><execute>/home/tk/utils/bluetooth_connect/connect 00:1D:43:A8:49:AC</execute></action>
-      </item>
-      <!-- need to correct the below, and add other devices
-      <item label="Connect Sony SRS-X3">
-        <action name="Execute"><execute>echo -e "connect 0C:A6:94:75:61:01" | bluetoothctl</execute></action>
-      </item> -->
-      <item label="Device Manager">
-        <action name="Execute"><execute>blueman-manager</execute></action>
-      </item>
-    </menu>
-    <menu id="screenshot-menu" label="Take Screenshot">
-      <item label="Full Screen">
-        <action name="Execute"><execute>scrot '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/screenshots/ ; notify-send "screenshot saved" "~/screenshots/$f"'</execute></action>
-      </item>
-      <item label="Selection">
-        <action name="Execute"><execute>scrot '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/screenshots/ ; notify-send "screenshot saved" "~/screenshots/$f"' -s</execute></action>
-      </item>
-      <item label="Active Window">
-        <action name="Execute"><execute>scrot '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/screenshots/ ; notify-send "screenshot saved" "~/screenshots/$f"' -u</execute></action>
-      </item>
-    </menu>
-    <item label="ObConf">
-      <action name="Execute"><execute>obconf</execute></action>
+    <item label="_bluetooth">
+      <action name="Execute"><execute>blueman-manager</execute></action>
     </item>
-    <item label="_Reconfigure">
+    <menu id="screenshot-menu" label="_screenshot">
+      <item label="_full screen">
+        <action name="Execute"><execute>scrot '%Y-%m-%d_%H%M%S.png' -d 1 -e 'mv $f ~/screenshots/ ; notify-send "screenshot saved" "~/screenshots/$f"'</execute></action>
+      </item>
+      <item label="_selection">
+        <action name="Execute"><execute>scrot '%Y-%m-%d_%H%M%S.png' -d 1 -e 'mv $f ~/screenshots/ ; notify-send "screenshot saved" "~/screenshots/$f"' -s</execute></action>
+      </item>
+      <item label="_active window">
+        <action name="Execute"><execute>scrot '%Y-%m-%d_%H%M%S.png' -d 1 -e 'mv $f ~/screenshots/ ; notify-send "screenshot saved" "~/screenshots/$f"' -u</execute></action>
+      </item>
+    </menu>
+    <item label="_reconfigure">
       <action name="Reconfigure" />
     </item>
     <!-- <item label="Restart"> -->
     <!--   <action name="Restart Openbox" /> -->
     <!-- </item> -->
   </menu>
-
+  <menu id="battery-menu" label="_battery" execute="battery_pipemenu"/>
   <separator />
-  <item label="Suspend">
+  <menu id="exit-menu" label="e_xit">
+    <item label="s_uspend">
+      <action name="Execute">
+        <execute>systemctl suspend</execute>
+      </action>
+    </item>
+    <item label="loc_k">
+      <action name="Execute">
+        <execute>xfce4-screensaver-command --lock</execute>
+      </action>
+    </item>
+  <separator />
+  <item label="_reboot">
     <action name="Execute">
-      <execute>systemctl suspend</execute>
+      <prompt>Are you sure you want to reboot?</prompt>
+      <execute>reboot now</execute>
     </action>
   </item>
-  <item label="Shutdown">
+  <item label="_shutdown">
     <action name="Execute">
       <prompt>Are you sure you want to shutdown?</prompt>
       <execute>shutdown now</execute>
     </action>
   </item>
-  <item label="Log Out">
+  <item label="_log out">
     <action name="Exit" />
   </item>
-</menu>
+  </menu>
 
+  </menu>
 </openbox_menu>
