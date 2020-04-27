@@ -72,13 +72,13 @@
   <item label="_reboot">
     <action name="Execute">
       <prompt>Are you sure you want to reboot?</prompt>
-      <execute>reboot now</execute>
+      <execute>systemctl reboot</execute>
     </action>
   </item>
   <item label="_shutdown">
     <action name="Execute">
       <prompt>Are you sure you want to shutdown?</prompt>
-      <execute>shutdown now</execute>
+      <execute>systemctl poweroff</execute>
     </action>
   </item>
   <item label="_log out">
