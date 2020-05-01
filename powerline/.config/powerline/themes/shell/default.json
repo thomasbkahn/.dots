@@ -2,6 +2,13 @@
 	"segments": {
                         "left": [
                                 {
+                                        "function": "powerline.segments.common.vcs.branch",
+                                        "args": {
+                                                "status_colors": true
+                                        },
+                                        "priority": 10
+                                },
+                                {
                                         "function": "powerline.segments.shell.mode",
                                         "args": {
                                                 "default": "viins"
@@ -36,13 +43,6 @@
                                 {
                                         "function": "powerline.segments.common.vcs.stash",
                                         "priority": 50
-                                },
-                                {
-                                        "function": "powerline.segments.common.vcs.branch",
-                                        "args": {
-                                                "status_colors": true
-                                        },
-                                        "priority": 40
                                 }
                         ]
 	}

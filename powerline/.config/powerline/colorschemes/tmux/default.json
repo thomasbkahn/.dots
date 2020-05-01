@@ -1,14 +1,14 @@
 {
 	"groups": {
 		"active_window_status": {"fg": "tk:bg",   "bg": "tk:fg",    "attrs": []},
-		"window_status":        {"fg": "tk:fg_shade_dim",     "bg": "tk:fg",    "attrs": []},
-		"activity_status":      {"fg": "tk:bg",     "bg": "yellow",    "attrs": []},
-		"bell_status":          {"fg": "red",        "bg": "gray0",    "attrs": []},
-		"window":               {"fg": "gray6",      "bg": "gray0",    "attrs": []},
-		"window:divider":       {"fg": "gray4",      "bg": "gray0",    "attrs": []},
+		"window_status":        {"fg": "tk:bg",     "bg": "tk:fg",    "attrs": []},
+		"activity_status":      {"fg": "tk:bg",     "bg": "tk:fg",    "attrs": []},
+		"bell_status":          {"fg": "red",        "bg": "tk:fg",    "attrs": []},
+		"window":               {"fg": "tk:bg",      "bg": "tk:fg",    "attrs": []},
+		"window:divider":       {"fg": "tk:bg",      "bg": "tk:fg",    "attrs": []},
 		"window:current":       {"fg": "tk:fg", "bg": "red", "attrs": []},
-		"window_name":          {"fg": "tk:fg",      "bg": "red", "attrs": ["bold"]},
-		"session":              {"fg": "tk:bg",      "bg": "tk:fg",   "attrs": ["bold"]},
-		"session:prefix":       {"fg": "tk:fg",     "bg": "red", "attrs": ["bold"]}
+		"window_name":          {"fg": "tk:fg",      "bg": "red", "attrs": []},
+		"session":              {"fg": "tk:bg",      "bg": "tk:fg",   "attrs": []},
+		"session:prefix":       {"fg": "tk:fg",     "bg": "red", "attrs": []}
 	}
 }
