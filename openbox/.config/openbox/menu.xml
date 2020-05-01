@@ -53,11 +53,32 @@
       <item label="100%">
         <action name="Execute"><execute>xbacklight -set 100</execute></action>
       </item>
+      <item label="90%">
+        <action name="Execute"><execute>xbacklight -set 90</execute></action>
+      </item>
+      <item label="80%">
+        <action name="Execute"><execute>xbacklight -set 80</execute></action>
+      </item>
+      <item label="70%">
+        <action name="Execute"><execute>xbacklight -set 70</execute></action>
+      </item>
+      <item label="60%">
+        <action name="Execute"><execute>xbacklight -set 60</execute></action>
+      </item>
       <item label="50%">
         <action name="Execute"><execute>xbacklight -set 50</execute></action>
       </item>
+      <item label="40%">
+        <action name="Execute"><execute>xbacklight -set 40</execute></action>
+      </item>
       <item label="30%">
         <action name="Execute"><execute>xbacklight -set 30</execute></action>
+      </item>
+      <item label="20%">
+        <action name="Execute"><execute>xbacklight -set 20</execute></action>
+      </item>
+      <item label="10%">
+        <action name="Execute"><execute>xbacklight -set 10</execute></action>
       </item>
     </menu>
     <item label="_reconfigure">
