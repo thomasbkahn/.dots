@@ -12,8 +12,8 @@ Urxvt.letterSpace: 1
 ! Colors
 *background:  #A38E79
 *foreground:  #342C25
-*color0:      #A38E79
-*color8:      #605346
+*color0:      #594D41
+*color8:      #716253
 *color1:      #7D494F
 *color9:      #7D494F
 *color2:      #3E625D
@@ -26,5 +26,5 @@ Urxvt.letterSpace: 1
 *color13:     #555270
 *color6:      #378691
 *color14:     #378691
-*color7:      #342C25
-*color15:     #4A3F35
+*color7:      #94816E
+*color15:     #847362
