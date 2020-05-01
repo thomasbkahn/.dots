@@ -128,11 +128,10 @@
     <name>desktop 1</name>
     <name>desktop 2</name>
     -->
-      <name>Alpha</name>
-      <name>Beta</name>
-      <name>Gamma</name>
-      <name>Delta</name>
-      <!-- <name>ε</name> -->
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -209,32 +208,13 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Left">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Right">
-      <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Up">
-      <action name="SendToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Down">
-      <action name="SendToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
     <keybind key="W-1">
       <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-1">
+      <action name="SendToDesktop">
         <to>1</to>
       </action>
     </keybind>
@@ -243,8 +223,18 @@
         <to>2</to>
       </action>
     </keybind>
+    <keybind key="S-W-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
     <keybind key="W-3">
       <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-3">
+      <action name="SendToDesktop">
         <to>3</to>
       </action>
     </keybind>
@@ -253,6 +243,72 @@
         <to>4</to>
       </action>
     </keybind>
+    <keybind key="S-W-4">
+      <action name="SendToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="W-5">
+      <action name="GoToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-5">
+      <action name="SendToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+    <keybind key="W-6">
+      <action name="GoToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-6">
+      <action name="SendToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+    <keybind key="W-7">
+      <action name="GoToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-7">
+      <action name="SendToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+    <keybind key="W-8">
+      <action name="GoToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-8">
+      <action name="SendToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="W-9">
+      <action name="GoToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-9">
+      <action name="SendToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+    <keybind key="W-0">
+      <action name="GoToDesktop">
+        <to>10</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-0">
+      <action name="SendToDesktop">
+        <to>10</to>
+      </action>
+    </keybind>
+
     <keybind key="C-A-k">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -309,6 +365,14 @@
         <height>100%</height>
       </action>
     </keybind>
+    <keybind key="S-W-a">
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>center</y>
+        <width>33%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
     <keybind key="C-W-w">
       <action name="GrowToEdge">
         <direction>north</direction>
@@ -334,6 +398,14 @@
         <x>-0</x>
         <y>center</y>
         <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="S-W-d">
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>center</y>
+        <width>33%</width>
         <height>100%</height>
       </action>
     </keybind>

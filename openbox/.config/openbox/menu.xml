@@ -48,6 +48,18 @@
         <action name="Execute"><execute>scrot '%Y-%m-%d_%H%M%S.png' -d 1 -e 'mv $f ~/screenshots/ ; notify-send "screenshot saved" "~/screenshots/$f"' -u</execute></action>
       </item>
     </menu>
+    <menu id="backlight_menu" label="back_light">
+      <!-- TODO: make script to set xbacklight and send notification, call here -->
+      <item label="100%">
+        <action name="Execute"><execute>xbacklight -set 100</execute></action>
+      </item>
+      <item label="50%">
+        <action name="Execute"><execute>xbacklight -set 50</execute></action>
+      </item>
+      <item label="30%">
+        <action name="Execute"><execute>xbacklight -set 30</execute></action>
+      </item>
+    </menu>
     <item label="_reconfigure">
       <action name="Reconfigure" />
     </item>
