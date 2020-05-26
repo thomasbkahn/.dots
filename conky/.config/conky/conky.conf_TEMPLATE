@@ -59,10 +59,10 @@ conky.config = {
     show_graph_scale = false,
     show_graph_range = false,
     short_units = true,
-    default_color = '342c25',
-    default_outline_color = '342c25',
-    default_shade_color = '342c25',
-	color1 = "342c25",
+    default_color = '{{conky_fg}}',
+    default_outline_color = '{{conky_fg}}',
+    default_shade_color = '{{conky_fg}}',
+	color1 = "{{conky_fg}}",
     double_buffer = true
 }
 
