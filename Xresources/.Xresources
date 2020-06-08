@@ -1,5 +1,3 @@
-#include "/home/tk/colors/hemoglobin"
-
 ! URxvt
 ! URxvt.font: xft:scientifica:size=11
 ! URxvt.boldFont: xft:scientifica:size=11
@@ -11,7 +9,7 @@ URxvt.scrollBar: false
 URxvt*buffered: false
 URxvt.cursorBlink: true
 URxvt.cursorColor: red
-! URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/terminal.svg
+URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/terminal.svg
 Urxvt.letterSpace: 1
 
 ! DPI/Font
