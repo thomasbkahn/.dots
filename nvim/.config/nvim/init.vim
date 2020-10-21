@@ -56,6 +56,7 @@ Plug 'sirver/ultisnips'
 Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
+Plug 'camspiers/lens.vim'
 call plug#end()
 
 " -----------------------------------------------------------------------------

@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>thicc-tk</name>
-    <titleLayout>DLC</titleLayout>
+    <name>joshua-tree</name>
+    <titleLayout>LDMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -55,57 +55,57 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Helvetica</name>
-      <size>12</size>
+      <name>Tewiotb</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Helvetica</name>
-      <size>12</size>
+      <name>Tewiotb</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Helvetica</name>
-      <size>10</size>
+      <name>Tewiotb</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Helvetica</name>
-      <size>10</size>
+      <name>Tewiotb</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Helvetica</name>
-      <size>12</size>
+      <name>Tewiotb</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Helvetica</name>
-      <size>12</size>
+      <name>Tewiotb</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -127,11 +127,10 @@
     <name>desktop 1</name>
     <name>desktop 2</name>
     -->
-      <name>Alpha</name>
-      <name>Beta</name>
-      <name>Gamma</name>
-      <name>Delta</name>
-      <!-- <name>ε</name> -->
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -208,32 +207,13 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Left">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Right">
-      <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Up">
-      <action name="SendToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Down">
-      <action name="SendToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
     <keybind key="W-1">
       <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-1">
+      <action name="SendToDesktop">
         <to>1</to>
       </action>
     </keybind>
@@ -242,8 +222,18 @@
         <to>2</to>
       </action>
     </keybind>
+    <keybind key="S-W-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
     <keybind key="W-3">
       <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-3">
+      <action name="SendToDesktop">
         <to>3</to>
       </action>
     </keybind>
@@ -252,11 +242,77 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="S-W-4">
+      <action name="SendToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="W-5">
+      <action name="GoToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-5">
+      <action name="SendToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+    <keybind key="W-6">
+      <action name="GoToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-6">
+      <action name="SendToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+    <keybind key="W-7">
+      <action name="GoToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-7">
+      <action name="SendToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+    <keybind key="W-8">
+      <action name="GoToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-8">
+      <action name="SendToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="W-9">
+      <action name="GoToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-9">
+      <action name="SendToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+    <keybind key="W-0">
+      <action name="GoToDesktop">
+        <to>10</to>
+      </action>
+    </keybind>
+    <keybind key="S-W-0">
+      <action name="SendToDesktop">
+        <to>10</to>
+      </action>
+    </keybind>
+
+    <keybind key="C-A-k">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4">
+    <keybind key="C-A-slash">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -267,16 +323,166 @@
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>
     </keybind>
-    <keybind key="W-backslash">
+    <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-BackSpace">
+    <keybind key="W-Return">
       <action name="ShowMenu">
         <menu>root-menu</menu>
+        <position>
+          <x>center</x>
+          <y>center</y>
+        </position>
       </action>
     </keybind>
+    <keybind key="W-space">
+      <action name="Execute">
+        <command>rofi -auto-select -show run</command>
+      </action>
+    </keybind>
+    <keybind key="W-BackSpace">
+      <action name="ShowMenu">
+        <menu>client-list-combined-menu</menu>
+        <!-- <menu>client-list-menu</menu> -->
+        <position>
+          <x>center</x>
+          <y>center</y>
+        </position>
+      </action>
+    </keybind>
+    <keybind key="C-A-l">
+      <action name="Execute">
+        <command>xfce4-screensaver-command --lock</command>
+      </action>
+    </keybind>
+    <!-- Send notification of batter / time status -->
+    <keybind key="C-A-p">
+      <action name="Execute">
+        <command>battery_notification</command>
+      </action>
+    </keybind>
+    <!-- tiling commands -->
+    <keybind key="W-a">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>center</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="S-W-a">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>center</y>
+        <width>33%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="C-W-w">
+      <action name="GrowToEdge">
+        <direction>north</direction>
+      </action>
+    </keybind>
+    <keybind key="C-W-a">
+      <action name="GrowToEdge">
+        <direction>west</direction>
+      </action>
+    </keybind>
+    <keybind key="C-W-x">
+      <action name="GrowToEdge">
+        <direction>south</direction>
+      </action>
+    </keybind>
+    <keybind key="C-W-d">
+      <action name="GrowToEdge">
+        <direction>east</direction>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>center</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="S-W-d">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>center</y>
+        <width>33%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-w">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-x">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>-0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-s">
+      <action name="ToggleMaximize">
+      </action>
+    </keybind>
+    <keybind key="S-W-s">
+      <action name="GrowToFill">
+      </action>
+    </keybind>
+    <keybind key="W-q">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-z">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-e">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>-0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
@@ -284,12 +490,27 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
+    <!-- <keybind key="A-Tab"> -->
+      <!-- <action name="Execute"> -->
+      <!--   <command>rofi -show window -fullscreen -padding 450</command> -->
+      <!-- </action> -->
+        <!-- <dialog>list</dialog> -->
+        <!-- <allDesktops>yes</allDesktops> -->
+        <!-- <raise>yes</raise> -->
+        <!-- <bar>yes</bar> -->
     <keybind key="A-Tab">
-      <action name="Execute">
-        <command>rofi -show window -fullscreen -padding 450</command>
+      <action name="NextWindow">
+        <dialog>list</dialog>
+        <allDesktops>yes</allDesktops>
+        <raise>yes</raise>
+        <bar>yes</bar>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
       </action>
     </keybind>
-    <!--  
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
         <finalactions>
@@ -299,6 +520,7 @@
         </finalactions>
       </action>
     </keybind>
+    <!--  
     <keybind key="C-A-Tab">
       <action name="NextWindow">
         <panels>yes</panels>
@@ -333,7 +555,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-Return">
+    <keybind key="C-A-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -362,16 +584,17 @@
     <!-- Set this to TRUE to move the mouse pointer across the desktop when
        switching due to hitting the edge of the screen -->
     <context name="Frame">
-      <mousebind button="A-Left" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-      <mousebind button="A-Left" action="Click">
-        <action name="Unshade"/>
-      </mousebind>
-      <mousebind button="A-Left" action="Drag">
-        <action name="Move"/>
-      </mousebind>
+      <!-- commented out due to conflict with blender -->
+      <!-- <mousebind button="A-Left" action="Press"> -->
+      <!--   <action name="Focus"/> -->
+      <!--   <action name="Raise"/> -->
+      <!-- </mousebind> -->
+      <!-- <mousebind button="A-Left" action="Click"> -->
+      <!--   <action name="Unshade"/> -->
+      <!-- </mousebind> -->
+      <!-- <mousebind button="A-Left" action="Drag"> -->
+      <!--   <action name="Move"/> -->
+      <!-- </mousebind> -->
       <mousebind button="A-Right" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -448,7 +671,7 @@
       <mousebind button="Left" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
-        <action name="Unshade"/>
+        <!-- <action name="Unshade"/> -->
       </mousebind>
       <mousebind button="Middle" action="Press">
         <action name="Lower"/>
@@ -805,5 +1028,8 @@
 
   # end of the example
 -->
+  <application name="*">
+    <decor>no</decor>
+  </application>
   </applications>
 </openbox_config>
