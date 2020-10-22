@@ -5,7 +5,7 @@
 		"information:additional":   { "fg": "gray9", "bg": "gray4", "attrs": [] },
 		"background":               { "fg": "white", "bg": "gray2", "attrs": [] },
 		"background:divider":       { "fg": "gray6", "bg": "gray2", "attrs": [] },
-		"mode":                     { "fg": "darkestgreen", "bg": "brightgreen", "attrs": ["bold"] },
+		"mode":                     { "fg": "tk:bg", "bg": "green", "attrs": [] },
 		"visual_range":             { "fg": "brightestorange", "bg": "darkorange", "attrs": ["bold"] },
 		"modified_indicator":       { "fg": "brightyellow", "bg": "gray4", "attrs": ["bold"] },
 		"paste_indicator":          { "fg": "white", "bg": "mediumorange", "attrs": ["bold"] },
@@ -22,7 +22,7 @@
 		"line_percent_gradient":    { "fg": "dark_green_gray", "bg": "gray4", "attrs": [] },
 		"position":                 { "fg": "gray9", "bg": "gray4", "attrs": [] },
 		"position_gradient":        { "fg": "green_yellow_red", "bg": "gray4", "attrs": [] },
-		"line_current":             { "fg": "gray1", "bg": "gray10", "attrs": ["bold"] },
+		"line_current":             { "fg": "gray1", "bg": "gray10", "attrs": [] },
 		"line_current_symbol":      { "fg": "gray1", "bg": "gray10", "attrs": [] },
 		"virtcol_current_gradient": { "fg": "dark_GREEN_Orange_red", "bg": "gray10", "attrs": [] },
 		"col_current":              { "fg": "gray6", "bg": "gray10", "attrs": [] },
@@ -56,24 +56,24 @@
 		},
 		"i": {
 			"colors": {
-				"gray0": "darkestblue",
-				"gray1": "darkestblue",
-				"gray2": "darkestblue",
-				"gray3": "darkblue",
-				"gray4": "darkblue",
-				"gray5": "darkestcyan",
-				"gray6": "darkestcyan",
-				"gray7": "darkestcyan",
-				"gray8": "mediumcyan",
-				"gray9": "mediumcyan",
-				"gray10": "mediumcyan",
-				"green_yellow_red": "gray5",
-				"dark_green_gray": "light_green_gray"
+				"gray0": "tk:fg",
+				"gray1": "tk:bg",
+				"gray2": "tk:fg",
+				"gray3": "tk:blue",
+				"gray4": "tk:blue",
+				"gray5": "tk:blue",
+				"gray6": "tk:blue",
+				"gray7": "tk:blue",
+				"gray8": "tk:bg",
+				"gray9": "tk:bg",
+				"gray10": "tk:blue",
+				"green_yellow_red": "tk:fg",
+				"dark_green_gray": "tk:bg"
 			},
 			"groups": {
-				"mode":               { "fg": "darkestcyan", "bg": "white", "attrs": ["bold"] },
-				"background:divider": { "fg": "darkcyan", "bg": "darkestblue", "attrs": [] },
-				"branch:divider":     { "fg": "darkcyan", "bg": "darkblue", "attrs": [] }
+				"mode":               { "fg": "tk:bg", "bg": "tk:blue", "attrs": [] },
+				"background:divider": { "fg": "tk:bg", "bg": "tk:fg", "attrs": [] },
+				"branch:divider":     { "fg": "tk:bg", "bg": "tk:blue", "attrs": [] }
 			}
 		},
 		"ic": {
