@@ -1,5 +1,5 @@
 # Dotfiles
 
-Dotfiles for Fe, my desktop running Xubuntu. Currently using openbox mainly.
+Dotfiles for iron\_mkII, my desktop running Arch. Currently using openbox mainly.
 
 
