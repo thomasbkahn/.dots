@@ -1,0 +1,32 @@
+overshoot.top {
+background-image: none;
+}
+
+overshoot.bottom {
+background-image: none;
+}
+
+overshoot.left {
+background-image: none;
+}
+
+overshoot.right {
+background-image: none;
+}
+
+undershoot.top {
+background-image: none;
+}
+
+undershoot.bottom {
+background-image: none;
+}
+
+undershoot.left {
+background-image: none;
+}
+
+undershoot.right {
+background-image: none;
+}
+@import 'colors.css';
